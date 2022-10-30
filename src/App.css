@@ -1,38 +1,283 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.limitar-secao {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 36px;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*topo--------------------------------------------------------------------------*/
+/*topo--------------------------------------------------------------------------*/
+/*topo--------------------------------------------------------------------------*/
+
+
+header {
+    padding: 10px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo img {
+    width: 150px;
+}
+
+.topo a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+/*SecaoCapa--------------------------------------------------------------------------*/
+/*SecaoCapa--------------------------------------------------------------------------*/
+/*SecaoCapa--------------------------------------------------------------------------*/
+
+.box-imagem {
+    background: linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%);
+    background-image: url('../public/assets/imagens/capa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+
+}
+
+.secao-capa {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-capa p {
+    max-width: 500px;
+    font-size: 35px;
+    font-family: 'Anybody', cursive;
+}
+
+.secao-capa h1 {
+    max-width: 500px;
+    font-size: 60px;
+    font-family: 'Anybody', cursive;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 70px;
+}
+
+/*SecaoProdutos--------------------------------------------------------------------------*/
+/*SecaoProdutos--------------------------------------------------------------------------*/
+/*SecaoProdutos--------------------------------------------------------------------------*/
+
+.produtos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oculos-box {
+    margin: 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#produtos {
+    width: 100%;
+    padding: 100px 20px;
+}
+
+.card-oculos {
+    background-color: #F6F6F6;
+    width: calc(50% - 15px);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-oculos h3 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.card-oculos img {
+    width: 80%;
+    max-height: 150px;
+    margin: 30px 0;
+}
+
+.card-oculos p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.box-lista {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 5px;
+}
+
+/*SecaoSobre--------------------------------------------------------------------------*/
+/*SecaoSobre--------------------------------------------------------------------------*/
+/*SecaoSobre--------------------------------------------------------------------------*/
+
+#sobre {
+    background-color: #F8F7FF;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.box-sobre p {
+    line-height: 32px;
+}
+
+.card-box {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+
+.card-box img, .card-box div {
+    width: 50%;
+    max-height: 300px;
+    border: 1px solid #a2adad;
+}
+
+.card-box div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px 25px;
+}
+
+.card-box div h3 {
+    font-size: 36px;
+    font-family: 'Anybody', cursive;
+    letter-spacing: 5px;
+    line-height: 42px;
+}
+
+.card-box div p {
+    font-size: 22px;
+    color: #4a4a4a;
+}
+
+/*SecaoContato--------------------------------------------------------------------------*/
+/*SecaoContato--------------------------------------------------------------------------*/
+/*SecaoContato--------------------------------------------------------------------------*/
+
+#contato {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    padding: 80px 20px;
+    background-color: #05031b;
+}
+
+.contatos-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato-redesocial {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+}
+
+.contato-redesocial div {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.contato-redesocial div img {
+    width: 18px;
+}
+
+.contato-redesocial div p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*Rodape--------------------------------------------------------------------------*/
+/*Rodape--------------------------------------------------------------------------*/
+/*Rodape--------------------------------------------------------------------------*/
+
+footer {
+    text-align: center;
+    background-color: #030303;
+    color: #ADADAD;
+    padding: 20px;
+}
+
+/*MediaQueries--------------------------------------------------------------------------*/
+/*MediaQueries--------------------------------------------------------------------------*/
+/*MediaQueries--------------------------------------------------------------------------*/
+
+
+@media (max-width: 768px){
+    .secao-capa h1{font-size: 40px; max-width: 350px;}
+    .secao-capa p{font-size: 20px;}
+    #produtos{padding: 60px 20px;}
+    .card-oculos h3{font-size: 22px;}
+    .card-oculos img{max-height: 100px;}
+    .card-oculos p{font-size: 16px;}
+    #sobre{padding: 60px 20px;}
+    .card-box{padding: 15px;}
+    .card-box div p{font-size: 16px;}
+    .card-box div h3{font-size: 22px;}
+    #contato{padding: 60px 20px;}
+
+}
+@media (max-width: 550px){
+    .topo{flex-direction: column;}
+    nav{width: 100%; padding: 10px; margin-top: 10px; border-top: 1px solid #aaadaf; display: flex; justify-content: center;}
+    .box-imagem {background-position: 89% center;}
+    .secao-capa{background-color: rgba(0, 0, 0, 0.6);}
+    #produtos{padding: 10px;}
+    .card-oculos{width: 100%;}
+    .card-oculos img{max-width: 250px;}
+    .box-lista{align-items: flex-start;}
+    #sobre{padding: 10px;}
+    .card-box{flex-direction: column;}
+    .card-box img{width: 100%; height: 300px;}
+    .card-box div{width: 100%; height: 300px;}
+    #contato{padding: 10px;}
+    .contatos-box{flex-direction: column;}
+    .contato-redesocial{align-items: center;}
+    .contato-redesocial div{width: 150px;}
 }
